@@ -4,30 +4,43 @@ var $enterButton = $('.enter');
 
 $('.enter').on('click', function() {
   var title = $userTitleInput.val();
-  var $title = $('.bookmarkTitle');
-
+  // var titleLength = $userTitleInput.val.length()
+  // var $cardTitle = $('.bookmarkTitle');
   var url = $userURLInput.val();
-  var $url = $('.bookmarkURL');
-  //$url.text(url)
-  //$title.text(title)
-  //
-  // var song = {
-  //   handleEvent: function (event) {
-  //     switch (event.type) {
-  //       case: "click":
-  //         console.log(this.name);
-  //         break;
-  //     }
-
+  // var $cardUrl = $('.bookmarkURL');
   $userTitleInput.val("");
   $userURLInput.val("");
+
   $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>");
 
-  $('.bookmarkRead').off('click').on('click', function() {
-    $(this).toggleClass('read');
-  });
+  updateCardCounter()
 
-  $('div').on('click', '.bookmarkRemove', function() {
-    $(this).closest('div').remove();
-   });
- });
+});
+
+$('.bookmarks').on('click', '.bookmarkRead', function() {
+  $(this).toggleClass('read');
+});
+
+$('.bookmarks').on('click', '.bookmarkRemove', function() {
+  $(this).closest('div').remove();
+});
+
+$(':text').on('keyup', function() {
+  check_enter();
+});
+
+function check_enter() {
+  if ($userTitleInput.val() === "" || $userURLInput.val() ==="" ) {
+
+      $('.enter').prop('disabled', true);
+    } else {
+      $('.enter').prop('disabled', false);
+    }
+}
+
+  function updateCardCounter() {
+    $('.cardCounter').text($('.card').length)
+  }
+
+check_enter()
+updateCardCounter()
