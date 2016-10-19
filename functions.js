@@ -1,13 +1,15 @@
 var $userTitleInput = $('.titleInput')
-var $userURLInput = $('.URLInput')
+var $userURLInput = $('.urlInput')
 var $enterButton = $('.enter')
 
 $('.enter').on('click', function() {
   var title = $userTitleInput.val()
   var $title = $('.bookmarkTitle')
-  var URL = $userURLInput.val()
-  var $URL = $('.bookmarkURL')
+  var url = $userURLInput.val()
+  var $url = $('.bookmarkURL')
   $title.text(title)
-  $URL.text(URL)
-  console.log
+  $url.text(url)
+  $userTitleInput.val("")
+  $userURLInput.val("")
+  console.log($url)
 })
