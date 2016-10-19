@@ -13,6 +13,5 @@ $('.enter').on('click', function() {
 
   $userTitleInput.val("")
   $userURLInput.val("")
-  $(".bookmarks").append("<p class='bookmarkURL'>"+url+"</p>")
-  $(".bookmarks").append("<h2 class='bookmarkTitle'>"+title+"</h2>")
+  $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>")
 })
