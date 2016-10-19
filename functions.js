@@ -14,9 +14,9 @@ $('.enter').on('click', function() {
   $userTitleInput.val("");
   $userURLInput.val("");
   $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>");
-/*Event listener is being added to every 
+/*Event listener is being added to every
 .bookmarkRead button everytime .enter is clicked. we want it to only add once*/
-  $('.bookmarkRead').on('click', function() {
+  $('.bookmarkRead').off('click').on('click', function() {
     console.log("event");
     $(this).toggleClass('read');
   });
