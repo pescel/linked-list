@@ -22,6 +22,7 @@ $('.enter').on('click', function() {
   });
 
   $('.bookmarkRemove').on('click', function() {
-    $('.card').remove();
+    $('.bookmarks').remove();
+
   });
 });
