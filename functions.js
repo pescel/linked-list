@@ -10,19 +10,24 @@ $('.enter').on('click', function() {
   var $url = $('.bookmarkURL');
   //$url.text(url)
   //$title.text(title)
+  //
+  // var song = {
+  //   handleEvent: function (event) {
+  //     switch (event.type) {
+  //       case: "click":
+  //         console.log(this.name);
+  //         break;
+  //     }
 
   $userTitleInput.val("");
   $userURLInput.val("");
   $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>");
-/*Event listener is being added to every
-.bookmarkRead button everytime .enter is clicked. we want it to only add once*/
+
   $('.bookmarkRead').off('click').on('click', function() {
-    console.log("event");
     $(this).toggleClass('read');
   });
 
-  $('.bookmarkRemove').on('click', function() {
-    $('.bookmarks').remove();
-
-  });
-});
+  $('div').on('click', '.bookmarkRemove', function() {
+    $(this).closest('div').remove();
+   });
+ });
