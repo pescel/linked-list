@@ -5,11 +5,14 @@ var $enterButton = $('.enter')
 $('.enter').on('click', function() {
   var title = $userTitleInput.val()
   var $title = $('.bookmarkTitle')
+
   var url = $userURLInput.val()
   var $url = $('.bookmarkURL')
-  $title.text(title)
-  $url.text(url)
+  //$url.text(url)
+  //$title.text(title)
+
   $userTitleInput.val("")
   $userURLInput.val("")
-  console.log($url)
+  $(".bookmarks").append("<p class='bookmarkURL'>"+url+"</p>")
+  $(".bookmarks").append("<h2 class='bookmarkTitle'>"+title+"</h2>")
 })
