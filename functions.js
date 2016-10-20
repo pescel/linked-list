@@ -4,10 +4,15 @@ var $userURLInput = $('.urlInput');
 $('.enter').on('click', function() {
   var title = $userTitleInput.val();
   var url = $userURLInput.val();
+  var isValid = validateURL(url);
+  if(!isValid) {
+    alert("Your URL isn't valid. Try something like \n http://www.farmersonly.com/");
+    return;
+  }
   $userTitleInput.val("");
   $userURLInput.val("");
 
-  checkEnter()
+  checkEnter();
 
   $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>");
 
@@ -29,7 +34,7 @@ $('.clearRead').on('click', function() {
   updateCardCounter();
 });
 
-$(':text').on('keyup', function() {
+$('input').on('keyup', function() {
   checkEnter();
 });
 
@@ -45,6 +50,11 @@ function updateCardCounter() {
   $('.cardCounter').text($('.card').length);
   $('.readCounter').text($('.read').length);
   $('.unreadCounter').text($('.card').length)- ($('.read').length);
+}
+
+function validateURL(url) {
+  var urlRegex = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/
+  return urlRegex.test(url);
 }
 
 checkEnter();
