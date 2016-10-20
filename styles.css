@@ -49,11 +49,7 @@ img {
 .card {
   width: 550px;
   height: 200px;
-}
-
-.card {
-  padding: 10px;
-  margin: 15px;
+  margin: 45px;;
   border: solid 2px #607d8b;
   display: block;
   background-color: #ffffff;
@@ -130,7 +126,14 @@ img {
   background: none;
   margin-top: 8px;
   margin-left: 10px;
+}
 
+.bookmarkRead:hover{
+  border-bottom: 5px solid #ffc107;
+}
+
+button {
+  height: 30px;
 }
 
 .bookmarkRemove {
@@ -144,6 +147,9 @@ img {
   margin-left: 355px;
 }
 
+.bookmarkRemove:hover {
+  border-bottom: 5px solid #ffc107;
+}
 
 p {
   color: #cfd8dc;
@@ -164,5 +170,3 @@ input {
 .read {
   color: #f05a28;
 }
-
-  
