@@ -151,6 +151,10 @@ button {
   border-bottom: 5px solid #ffc107;
 }
 
+.card:visited {
+  background-color: f2
+}
+
 p {
   color: #cfd8dc;
 }
