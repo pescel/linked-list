@@ -9,19 +9,27 @@
 </head>
 
 <body>
-
   <article class="newBookmarks">
-    <img src="images/linked-list-logo.svg"/>
+    <!-- <img src="images/linked-list-logo.svg"/> -->
+<div class="leftButtons">
+  <h1><span>Linked</span><img src="images/linked-list-logo.svg"/>                     <span>List</span></h1>
     <input type="text" class="titleInput" placeHolder="Website Title"/><br>
     <input type="url" class="urlInput" placeHolder="Website URL" /><br>
-    <button class="enter">Enter</button>
-    <button class="clearRead">Clear Read Bookmarks</button>
+    <button class="enter">Enter</button></br>
+
+    <button class="clearRead">Clear Read Bookmarks</button></br>
+    <div class="counters">
     <section class="cardCounter"></section>
-    <section class="readCounter"></section>
-    <section class="unreadCounter"></section>
+    <p>Total Cards</p>
+    <section class="readCounter">Cards read</section>
+    <p>Cards Read</p>
+    <section class="unreadCounter">Unread Cards</section>
+    <p>Unread Cards</p>
+
+   </div>
+  </div>
   </article>
   <section class="bookmarks"></section>
-
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="   crossorigin="anonymous"></script>
