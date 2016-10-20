@@ -56,8 +56,11 @@ function updateCardCounter() {
 
   var cardNum = $('.card').length;
   var readNum = $('.read').length;
+  var unreadCards = cardNum - readNum;
   $('.cardCounter').text(cardNum);
   $('.readCounter').text(readNum);
+  $('.unreadCounter').text(unreadCards);
+
 
 }
 
