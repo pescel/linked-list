@@ -16,8 +16,8 @@ $('.enter').on('click', function() {
 
   $(".bookmarks").append(" \
     <div class='card'> \
-    <h2 class='bookmarkTitle'>"+title+"</h2> \
-    <a href="+url+" class='bookmarkURL'>"+url+"</a> \
+    <h2 class='bookmarkTitle'>"+title+"</h2></br> \
+    <a href="+url+" class='bookmarkURL'>"+url+"</a></br> \
     <button class='bookmarkRead'>Read</button> \
     <button class='bookmarkRemove'>Delete</button> \
     </div>");
