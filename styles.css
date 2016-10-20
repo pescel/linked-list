@@ -157,9 +157,8 @@ button {
   border-bottom: 5px solid #ffc107;
 }
 
-/*.read {
-  background-color: #f2f4f4;
-  color: #f05a28;*/
+.bookmarkRead:visited {
+  color: #f05a28;
 }
 
 p {
