@@ -41,18 +41,18 @@ img {
 
 .bookmarks {
   background-color: #cfd8dc;
-  display: flex;
-  flex-direction: column;
   width: 50%;
   align-content: center;
+  overflow: scroll;
 }
 
 .card {
-  width: 500px;
-  height: 200px;
+  padding: 10px;
+  margin: 15px;
   border: solid 2px #607d8b;
   display: block;
-  background-color: #ffffff
+  background-color: #ffffff;
+  overflow: scroll;
 }
 
 .titleInput {
@@ -68,7 +68,7 @@ img {
 }
 
 .leftButtons {
-  display: block;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +76,7 @@ img {
 }
 
 .enter {
-  height: 40px;
+  padding: 20px 40px 40px 40px;
   width: 400px;
   background-color: #ffc107;
   font-weight: 800;
@@ -84,6 +84,9 @@ img {
   color: #ffffff;
   margin: 20px 0;
   font-size: 20px;
+  border: 0;
+  box-shadow:none;
+  border-radius: 0px;
 }
 
 .clearRead {
@@ -98,18 +101,18 @@ img {
 
 .bookmarkTitle {
   border-bottom: solid 2px #cfd8dc;
-  padding: 20px;
+  padding: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 30px;
   color: #455A64;
 }
 
 .bookmarkURL {
   border-bottom: solid 2px #cfd8dc;
-  padding: 25px;
+  padding: 15px;
   font-family: "Open Sans", sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   color: #455A64;
 }
 
@@ -143,6 +146,10 @@ p {
 
 .counters {
   color: #cfd8dc;
+}
+
+.counters > span {
+  padding-right: 20px;
 }
 
 input {
