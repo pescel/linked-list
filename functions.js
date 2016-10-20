@@ -49,8 +49,9 @@ function checkEnter() {
 function updateCardCounter() {
   $('.cardCounter').text($('.card').length);
   $('.readCounter').text($('.read').length);
-  $('.unreadCounter').text($('.card').length)- ($('.read').length);
+  $('.unreadCounter').text($('.card').length) - ($('.read').length);
 }
+
 
 function validateURL(url) {
   var urlRegex = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/
