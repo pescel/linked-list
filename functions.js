@@ -60,7 +60,6 @@ function updateCardCounter() {
   $('.cardCounter').text(cardNum);
   $('.readCounter').text(readNum);
   $('.unreadCounter').text(unreadCards);
-
 }
 
 
