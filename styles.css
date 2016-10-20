@@ -1,9 +1,39 @@
 .read {
   background-color: red;
 }
+img {
+  height: 30px;
+  width: 30px;
+}
+
+body {
+  position: flex;
+  height: 200vh;
+  position: row;
+  flex-grow: 50px;
+}
 
 
+.article {
+  position: flex;
+  height: 200vh;
+  position: row;
+  flex-grow: 50px;
+  position: fixed;
+}
+
+.bookmarks {
+  position: flex;
+  height: 200vh;
+  position: row;
+  flex-grow: 50px
+  border:solid 2px black;
+}
 
 .card {
-  padding: 20px;
+  position: flex;
+  height: 200vh;
+  position: row;
+  flex-grow: 50px
+  border:solid 2px black;
 }
