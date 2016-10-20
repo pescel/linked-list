@@ -14,7 +14,13 @@ $('.enter').on('click', function() {
 
   checkEnter();
 
-  $(".bookmarks").append("<div class='card'><h2 class='bookmarkTitle'>"+title+"</h2><p class='bookmarkURL'>"+url+"</p><button class='bookmarkRead'>Read</button><button class='bookmarkRemove'>Delete</button></div>");
+  $(".bookmarks").append(" \
+    <div class='card'> \
+    <h2 class='bookmarkTitle'>"+title+"</h2> \
+    <p class='bookmarkURL'>"+url+"</p> \
+    <button class='bookmarkRead'>Read</button> \
+    <button class='bookmarkRemove'>Delete</button> \
+    </div>");
 
   updateCardCounter();
 });
@@ -47,9 +53,12 @@ function checkEnter() {
 }
 
 function updateCardCounter() {
-  $('.cardCounter').text($('.card').length);
-  $('.readCounter').text($('.read').length);
-  $('.unreadCounter').text($('.card').length) - ($('.read').length);
+
+  var cardNum = $('.card').length;
+  var readNum = $('.read').length;
+  $('.cardCounter').text(cardNum);
+  $('.readCounter').text(readNum);
+
 }
 
 
