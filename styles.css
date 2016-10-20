@@ -11,11 +11,11 @@ button {
   height: 20px;
 
 }
-
 body {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;
+  flex-direction: row;*/
   height: 100%;
+  width: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -36,14 +36,19 @@ img {
 .newBookmarks {
   background-color: #455A64;
   width: 50%;
+  height: 100%;
+  position: absolute;
+  /*height: 100%;*/
   vertical-align: middle;
 }
 
 .bookmarks {
   background-color: #cfd8dc;
   width: 50%;
+  height: 100%;
   align-content: center;
-  overflow-y: scroll;
+  position: absolute;
+  right: 0;
 }
 
 .card {
@@ -53,7 +58,6 @@ img {
   border: solid 2px #607d8b;
   display: block;
   background-color: #ffffff;
-  overflow: scroll;
 }
 
 .titleInput {
@@ -70,10 +74,13 @@ img {
 
 .leftButtons {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+
+
+  /*display: flex;*/
+  /*flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 .enter {
@@ -180,3 +187,25 @@ input {
 .read {
   color: #f05a28;
 }
+
+@media screen and (min-width: 800px)
+
+/*body  {
+  display: flex;
+}
+
+.newBookmarks {
+  background-color: #455A64;
+  width: 100%
+  vertical-align: middle;
+  flex-direction: column;
+*/
+
+/*}
+
+.bookmarks {
+  background-color: #cfd8dc;
+  width: 100%
+  align-content: center;
+  position: absolute;
+}*/
