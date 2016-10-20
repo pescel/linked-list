@@ -29,8 +29,8 @@ h1 {
 
 img {
   height: 50px;
-  width: 50px;
-  margin: 0 5px;
+  width: 80px;
+  margin-left: 10px;
 }
 
 .newBookmarks {
@@ -98,7 +98,7 @@ img {
 
 .bookmarkTitle {
   border-bottom: solid 2px #cfd8dc;
-  padding: 5px;
+  padding: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 40px;
@@ -107,7 +107,7 @@ img {
 
 .bookmarkURL {
   border-bottom: solid 2px #cfd8dc;
-  padding: 5px;
+  padding: 25px;
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
   color: #455A64;
@@ -117,19 +117,28 @@ img {
   font-family: "Open Sans", sans-serif;
   color: #455A64;
   text-decoration: none;
+  font-size: 20px;
+  border: none;
+  background: none;
+  margin-top: 8px;
+  margin-left: 10px;
+
 }
 
 .bookmarkRemove {
   font-family: "Open Sans", sans-serif;
   color: #455A64;
   text-decoration: none;
+  font-size: 20px;
+  border: none;
+  background: none;
+  margin-top: 8px;
+  margin-left: 355px;
 }
 
 
 p {
   color: #cfd8dc;
-
-
 }
 
 .counters {
@@ -138,4 +147,8 @@ p {
 
 input {
   font-size: 25px;
+}
+
+.read {
+  color: #f05a28;
 }
