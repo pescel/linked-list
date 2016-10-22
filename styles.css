@@ -179,7 +179,7 @@ input {
   color: #f05a28;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
 .newBookmarks {
   width: 100%;
@@ -194,28 +194,39 @@ input {
   height: 50%;
   position: static;
 }
-
-@media screen and (max-width: 350px;) {
-
-  .titleInput {
-    height: 20px;
-    width: 200px;
-    margin: 10px 0;
+@media screen and (max-width: 600px) {
+  .card {
+    width: 430px;
+    height: 200px;
+    text-align: center;
   }
+}
 
-  .urlInput {
-    height: 20px;
-    width: 200px;
-    margin: 10px 0;
-  }
+@media screen and (max-width: 420px) {
 
 
+.card {
+  width: 300px;
+  height: 110px;
+  margin: 25px;;
+}
 
+.titleInput {
+  height: 30px;
+  width: 300px;
 
+}
 
+.urlInput {
+  height: 30px;
+  width: 300px;
 
+}
 
-
+.enter {
+  padding: 20px 40px 40px 40px;
+  width: 300px;
+}
 
 
 
